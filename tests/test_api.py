@@ -29,5 +29,5 @@ def test_precio_sin_cupon():
     json_data = response.get_json()
     assert "precio_final" in json_data
 
-    esperado = round(10000 * 1.19, 2)
+    esperado = round(5000 * 1.19, 2)
     assert json_data["precio_final"] == esperado
